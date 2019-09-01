@@ -16,7 +16,7 @@ pipeline {
                 script {
                     app = docker.build("muryginm/train-schedule")
                     app.inside {
-                        sh 'echo $(curl localhost:8080)'
+                        sh 'node --version'
                     }
                 }
             }
