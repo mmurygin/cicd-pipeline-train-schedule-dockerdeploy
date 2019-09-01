@@ -15,9 +15,9 @@ pipeline {
             steps {
                 script {
                     app = docker.build("muryginm/train-schedule")
-                    app.inside {
-                        sh 'node --version'
-                    }
+                    // app.inside {
+                    //     sh 'node --version'
+                    // }
                 }
             }
         }
